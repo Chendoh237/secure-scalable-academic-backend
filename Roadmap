@@ -1,0 +1,33 @@
+STEP 1 (NEXT MESSAGE)
+
+I will:
+
+Create Django apps
+
+Define models.py (clean, indexed, constrained)
+
+Show exact migrations
+
+Align media settings with your scripts
+
+STEP 2
+
+Student registration API
+
+Image upload handling
+
+Validation (5–12 images)
+
+STEP 3
+
+JWT login with matricule
+
+Student dashboard APIs
+
+STEP 4
+
+Admin APIs
+
+Attendance APIs
+
+Recognition integration

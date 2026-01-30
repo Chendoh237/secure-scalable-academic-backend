@@ -1,0 +1,3 @@
+# Additional requirements for export functionality
+reportlab==4.0.7
+openpyxl==3.1.2

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #EF4444; color: white; padding: 20px; border-radius: 5px 5px 0 0; text-align: center; }
+        .content { background-color: #f9fafb; padding: 20px; border-left: 4px solid #EF4444; }
+        .footer { background-color: #f3f4f6; padding: 15px; text-align: center; font-size: 12px; color: #6b7280; border-radius: 0 0 5px 5px; }
+        .alert { background-color: #fee2e2; border-left: 4px solid #ef4444; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ institution_name }}</h1>
+        </div>
+        
+        <div class="content">
+            <p>Dear {{ student_name }},</p>
+            
+            <div class="alert">
+                <strong>Attendance Alert:</strong> Your attendance in {{ course_name }} is below the required threshold.
+            </div>
+            
+            <p><strong>Current Attendance Rate:</strong> {{ attendance_rate }}%</p>
+            <p><strong>Required Threshold:</strong> {{ threshold }}%</p>
+            
+            <p>Your attendance has fallen below the minimum required for continuation in this course. Please take immediate action to improve your attendance.</p>
+            
+            <p><strong>What You Need to Do:</strong></p>
+            <ul>
+                <li>Attend all upcoming classes for {{ course_name }}</li>
+                <li>Inform your lecturer of any legitimate absences</li>
+                <li>Check with your department head if you have extenuating circumstances</li>
+                <li>Monitor your attendance through the student portal</li>
+            </ul>
+            
+            <p>If your attendance does not improve, you may become ineligible for the final examination.</p>
+            
+            <p>If you need assistance, please contact your department office.</p>
+            
+            <p>Best regards,<br>{{ institution_name }} Administration</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; {{ current_year }} {{ institution_name }}. All rights reserved.</p>
+            <p>This is an automated email. Please do not reply directly to this message.</p>
+        </div>
+    </div>
+</body>
+</html>
