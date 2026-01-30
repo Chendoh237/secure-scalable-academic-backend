@@ -177,7 +177,7 @@ class StudentCourseSelection(models.Model):
         ]
         constraints = [
             models.CheckConstraint(
-                check=~models.Q(is_offered=False, is_approved=True),
+                condition=~models.Q(is_offered=False, is_approved=True),
                 name='prevent_approved_without_offered'
             )
         ]
